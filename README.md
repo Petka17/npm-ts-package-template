@@ -1,5 +1,7 @@
 # A template for a npm package with typescript and jest
 
+Inspired by this [article](https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c)
+
 ## Initial steps
 
 1. make new folder: `mrdir project-folder && cd project-folder`
