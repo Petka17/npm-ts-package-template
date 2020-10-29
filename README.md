@@ -1,4 +1,4 @@
-# Template for npm package with typescript and jest
+# A template for a npm package with typescript and jest
 
 ## Initial steps
 
@@ -13,14 +13,17 @@
 ### Install some essential packages
 
 ```bash
-yarn add -D @typescript-eslint/eslint-plugin \
+yarn add -D @types/jest \
+            @typescript-eslint/eslint-plugin \
             @typescript-eslint/parser \
             eslint \
             eslint-config-prettier \
             eslint-plugin-prettier \
             eslint-plugin-simple-import-sort \
+            jest \
             nodemon \
             prettier \
+            ts-jest \
             typescript
 ```
 
