@@ -17,4 +17,7 @@ module.exports = {
     es6: true,
   },
   plugins: ['@typescript-eslint', 'simple-import-sort'],
+  rules: {
+    'simple-import-sort/sort': 'error',
+  },
 }
