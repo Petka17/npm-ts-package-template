@@ -1,6 +1,6 @@
 {
   "name": "npm-ts-package-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A template for npm package with typescript and jest",
   "author": "Peter Klimenko",
   "license": "ISC",
