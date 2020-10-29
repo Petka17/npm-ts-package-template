@@ -1,0 +1,48 @@
+{
+  "name": "npm-ts-package-template",
+  "version": "1.0.0",
+  "description": "Template for npm package with typescript and jest",
+  "author": "Peter Klimenko",
+  "license": "ISC",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petka17/npm-ts-package-template.git"
+  },
+  "homepage": "https://github.com/Petka17/npm-ts-package-template#readme",
+  "bugs": {
+    "url": "https://github.com/Petka17/npm-ts-package-template/issues"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage --verbose",
+    "watch": "nodemon --watch src --exec yarn build",
+    "lint": "eslint --fix --ignore-path .gitignore src && prettier --write --ignore-path .gitignore \"./**/*.json\"",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn lint && yarn test",
+    "preversion": "yarn lint",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "jest": "^26.6.1",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.3",
+    "typescript": "^4.0.5"
+  }
+}
